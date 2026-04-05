@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Test</title>
+
     <style>
-
-        .baslik {
-            font-weight: bold;
-            text-align: center;
-            color: red;
-        }
-        .yazi {
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            line-height: 30px;
+        body {
+            background: #222;
+            color: white;
+            font-family: Arial;
         }
 
-        .cizgi {
-            text-decoration: underline;
+        .no-shadow {
+            font-size: 40px;
+            margin: 20px;
+        }
+
+        .with-shadow {
+            font-size: 40px;
+            padding: 20px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .strong-shadow {
+            font-size: 40px;
+            margin: 20px;
+            text-shadow: 5px 5px 15px red;
         }
     </style>
+
 </head>
 <body>
 
-    <div class="baslik">baslik</div>
+    <div class="no-shadow">Kerem (Shadow yok)</div>
 
-    <div class="yazi">
-        kerem ali mehmet
-    </div>
+    <div class="with-shadow">Kerem (Normal shadow)</div>
 
-    <div class="cizgi">
-        bu yazi cizili olmali
-    </div>
+    <div class="strong-shadow">Kerem (Abartı shadow)</div>
 
 </body>
 </html>
