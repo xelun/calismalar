@@ -3,41 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadow Test</title>
+    <title>CSS TEXT PRACTICE</title>
 
     <style>
-        body {
-            background: #222;
-            color: white;
-            font-family: Arial;
-        }
-
-        .no-shadow {
-            font-size: 40px;
-            margin: 20px;
-        }
-
-        .with-shadow {
-            font-size: 40px;
+        .kutu {
+            width: 600px;
+            border: 3px solid black;
             padding: 20px;
-            text-shadow: 2px 2px 5px black;
+            margin: 50px auto;
         }
 
-        .strong-shadow {
-            font-size: 40px;
-            margin: 20px;
-            text-shadow: 5px 5px 15px red;
+        .baslik {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        .yazi1 {
+            color: blue;
+            letter-spacing: 2px;
+        }
+
+        .yazi2 {
+            color: red;
+            line-height: 30px;
+        }
+
+        .yazi3 {
+            text-decoration: line-through;
+        }
+
+        .yazi4 {
+            text-decoration: overline;
+        }
+
+        .yazi5 {
+            text-align: right;
+        }
+
+        .yazi6 {
+            text-decoration: none;
         }
     </style>
 
 </head>
 <body>
 
-    <div class="no-shadow">Kerem (Shadow yok)</div>
+    <div class="kutu">
 
-    <div class="with-shadow">Kerem (Normal shadow)</div>
+        <h1 class="baslik">KEREM CSS TEXT</h1>
 
-    <div class="strong-shadow">Kerem (Abartı shadow)</div>
+        <p class="yazi1">
+            Bu yazı mavi ve harfler arası boşluk var
+        </p>
+
+        <p class="yazi2">
+            Bu yazı kırmızı ve satırlar arası boşluk var
+        </p>
+
+        <p class="yazi3">
+            Bu yazının üstü çizili
+        </p>
+
+        <p class="yazi4">
+            Bu yazının üstünde çizgi var
+        </p>
+
+        <p class="yazi5">
+            Bu yazı sağa hizalı
+        </p>
+
+        <p class="yazi6">
+            Bu yazıda hiçbir decoration yok
+        </p>
+
+    </div>
 
 </body>
 </html>

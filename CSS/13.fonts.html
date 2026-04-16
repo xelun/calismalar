@@ -1,23 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS - FONTS</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i,800,800i&display=swap&subset=latin-ext" rel="stylesheet">
-    <style>
-        h1 {
-           font-family: "Open Sans", sans-serif;
-        }
-        p {
-            font-size: 16px;
-            line-height: 5px;
-        }
-    </style>
-</head>
-<body> 
-    <h1>BASLIK 1</h1>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Notlar</title>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia illo fuga eveniet ea delectus quibusdam nulla eius molestiae cum sed! Quae necessitatibus impedit sunt quaerat cupiditate error repudiandae eos mollitia. Inventore harum sed, doloribus repellendus dolor placeat beatae labore, ipsum neque obcaecati asperiores odio iusto repellat modi iure ea ex?</p>
+<style>
+
+/* 🔹 PX (sabit) */
+.px {
+  font-size: 20px;
+}
+
+/* 🔹 REM (html'e bağlı) */
+html {
+  font-size: 10px;
+}
+
+.rem {
+  font-size: 2rem; /* 20px */
+}
+
+/* 🔹 EM (parent'a bağlı) */
+.parent {
+  font-size: 20px;
+}
+
+.em {
+  font-size: 2em; /* 40px olur */
+}
+
+/* 🔹 % (oranlama) */
+.kutu {
+  width: 100%;
+}
+
+.ic {
+  width: 50%; /* yarısı */
+}
+
+/* 🔹 VH (yükseklik) */
+.vh {
+  height: 50vh;
+  background: lightblue;
+}
+
+/* 🔹 VW (genişlik) */
+.vw {
+  width: 50vw;
+  background: lightcoral;
+}
+
+/* 🔹 SHADOW */
+.shadow-box {
+  box-shadow: 0px 10px 20px black;
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 5px gray;
+}
+
+/* 🔹 FLEX */
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.flex div {
+  width: 100px;
+  height: 100px;
+  background: gray;
+}
+
+</style>
+</head>
+<body>
+
+<h2 class="px">PX örnek</h2>
+<h2 class="rem">REM örnek</h2>
+
+<div class="parent">
+  <p class="em">EM örnek</p>
+</div>
+
+<div class="kutu">
+  <div class="ic">%</div>
+</div>
+
+<div class="vh">VH</div>
+<div class="vw">VW</div>
+
+<div class="shadow-box">Box Shadow</div>
+<h2 class="shadow-text">Text Shadow</h2>
+
+<div class="flex">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
 </body>
 </html>
