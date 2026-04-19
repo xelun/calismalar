@@ -3,43 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pseudo</title>
+
     <style>
-        html {
 
-            font-size: 10px;
+        a:link {
+            color: blue;
         }
-        .input {
 
-            margin: 0.5rem;
-            padding: 0.5rem;
-            text-align: center;
-            border-radius: 1rem;
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        button:hover {
+            background: black;
+            color: white;
+        }
+
+        button:active {
+            background: red;
+        }
+
+        input:focus {
+            border: 2px solid red;
             outline: none;
         }
-        .input3 {
 
-            background: blue;
-            border: 0.3rem solid black;
-            
+        .box {
+            width: 150px;
+            height: 80px;
+            background: gray;
+            margin-top: 20px;
         }
-        .input1:focus {
 
-            background: aqua;
-            border: 0.5rem solid black;
-            
+        .box:hover {
+            background: orange;
         }
-        .input2:focus {
 
-            background: pink;
-            border: 0.5rem solid black;
-            
+        .box:active {
+            background: black;
         }
+
     </style>
+
 </head>
 <body>
-    <input class="input input1" type="text" placeholder="1">
-    <input class="input input2" type="text" placeholder="2">
-    <input class="input input3" type="text" placeholder="3">
+
+    <a href="https://google.com">Link</a>
+
+    <br><br>
+
+    <button>Tikla</button>
+
+    <br><br>
+
+    <input type="text" placeholder="tikla">
+
+    <br><br>
+
+    <div class="box"></div>
+
 </body>
 </html>
