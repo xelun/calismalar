@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NTH NOTES</title>
+
+<style>
+
+/* =========================
+   TEMEL
+========================= */
+
+/* tüm p'ler */
+.box p {
+  color: grey;
+}
+
+/* =========================
+   NTH-CHILD (HERKESİ SAYAR)
+========================= */
+
+/* çift sıradakiler (2,4,6...) */
+.box p:nth-child(2n) {
+  color: red;
+}
+
+/* 3n+1 (1,4,7...) */
+.box p:nth-child(3n+1) {
+  color: blue;
+}
+
+/* belirli indexler */
+.box p:nth-child(2),
+.box p:nth-child(5),
+.box p:nth-child(8) {
+  color: orange;
+}
+
+/* ilk 5 eleman */
+.box p:nth-child(-n+5) {
+  background: lightgray;
+}
+
+/* =========================
+   NTH-OF-TYPE (SADECE P SAYAR)
+========================= */
+
+/* p'ler arasında çift */
+.box p:nth-of-type(2n) {
+  background: yellow;
+}
+
+/* p'ler arasında 3n */
+.box p:nth-of-type(3n) {
+  background: green;
+}
+
+/* p'ler arasında belirli index */
+.box p:nth-of-type(2),
+.box p:nth-of-type(9) {
+  background: purple;
+}
+
+/* son p */
+.box p:last-of-type {
+  border: 2px solid black;
+}
+
+/* =========================
+   NOTLAR
+========================= */
+
+/*
+nth-child  = herkesi sayar
+nth-of-type = sadece aynı tag'i sayar
+
+pattern:
+2n      → 2,4,6
+3n+1    → 1,4,7
+-n+5    → 1,2,3,4,5
+
+virgül (,) → rastgele seçim
+
+öncelik:
+en alttaki kazanır
+*/
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <span>1</span>
+  <p>2</p>
+  <p>3</p>
+  <span>4</span>
+  <p>5</p>
+  <p>6</p>
+  <span>7</span>
+  <p>8</p>
+  <p>9</p>
+</div>
+
+</body>
+</html>

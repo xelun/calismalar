@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pseudo Element Demo</title>
+
     <style>
+        .para1 {
+            font-size: 1.5em;
+            line-height: 1.5em;
+        }
+
+        /* İlk harf */
         .para1::first-letter {
-            color : blue;
-            font-size: 60px;
+            color: red;
+            font-size: 50px;
         }
+
+        /* İlk satır */
         .para1::first-line {
-            color : red;
+            color: blue;
         }
+
+        /* Başa ekleme */
         .para1::before {
-            content : " >>> ";
+            content: ">>> ";
         }
+
+        /* Sona ekleme */
         .para1::after {
-            content: " END ⭐ ";
+            content: " END ⭐";
         }
     </style>
 </head>
 <body>
-    <div class="para1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tempore ipsam doloremque minus. Molestias, reiciendis non animi recusandae omnis aspernatur, molestiae ea laudantium necessitatibus qui illo adipisci, sapiente odio maxime nihil quis nam. Magnam omnis nobis voluptate exercitationem aliquid labore officia repellendus ea molestias cum, fugit at asperiores voluptates! Sint, labore modi eos officia repellat distinctio nulla, qui quos perferendis saepe accusantium adipisci dignissimos aut rem sequi dolores facilis suscipit recusandae animi, ex voluptates magni quisquam. Architecto, voluptas mollitia inventore numquam possimus sunt id ex nulla molestias quod illo doloribus iure porro illum aliquam accusantium voluptate fugiat a saepe? Neque.</p>
-    </div>
+
+    <p class="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel nam at unde nostrum quae illum numquam blanditiis sit cumque veritatis repudiandae minus deserunt minima officiis modi architecto molestiae deleniti.
+    </p>
+
 </body>
 </html>

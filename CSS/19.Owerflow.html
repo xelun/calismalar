@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 250px;
+            height: 120px;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 10px;
+            background: #f2f2f2;
+        }
+
+        .visible {
+            overflow: visible;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>overflow: visible (default)</h2>
+    <div class="box visible">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Doloribus, harum! Bu metin kutudan taşacak ama görünmeye devam edecek.
+    </div>
+
+    <h2>overflow: hidden</h2>
+    <div class="box hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Bu metnin taşan kısmı görünmeyecek.
+    </div>
+
+    <h2>overflow: auto</h2>
+    <div class="box auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vitae officia excepturi consequuntur, doloribus cupiditate eius iste temporibus eaque voluptates ducimus debitis dolorum expedita distinctio adipisci suscipit facilis repellendus quod quis ipsa necessitatibus non itaque quam? Quaerat praesentium illum est dicta sed sint ipsum explicabo architecto dolores accusantium doloribus debitis, quo iure enim. Consequatur aut mollitia ullam ratione. Provident molestias voluptatibus magni fuga quis quasi quod. Nobis vitae nisi at! Nobis aperiam debitis voluptatum inventore dolores odit saepe modi perferendis voluptates dolore exercitationem, aspernatur iusto maxime labore atque distinctio, ea recusandae. Veniam ea error rem soluta fugit eligendi id quibusdam taşmazsa çıkmaz.
+    </div>
+
+    <h2>overflow: scroll</h2>
+    <div class="box scroll">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Her zaman scroll görünür.
+    </div>
+
+</body>
+</html>
