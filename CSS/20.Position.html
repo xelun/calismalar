@@ -1,35 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .kirmizi {
-            background: red;
-            width: 100px;
-            height: 100px;
-            position: relative;
-            top: 50px;
-            left: 30px;
-        }
-        .mavi {
-            background: blue;
-            width: 100px;
-            height: 100px;
-            position: relative;
-            top: 20px;
-        }
-        .sari {
-            background: yellow;
-            width: 100px;
-            height: 100px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Position Only</title>
+
+  <style>
+    body {
+      height: 2000px; /* scroll */
+      margin: 0;
+    }
+
+    /* FIXED */
+    .fixed-box {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background: black;
+      color: white;
+      padding: 10px;
+    }
+
+    /* RELATIVE */
+    .relative-box {
+      position: relative;
+      top: 30px;
+      left: 30px;
+      width: 100px;
+      height: 100px;
+      background: green;
+    }
+
+    /* ABSOLUTE */
+    .parent {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: lightgray;
+      margin: 50px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 60px;
+      height: 60px;
+      background: blue;
+      color: white;
+    }
+
+    /* Z-INDEX */
+    .z-box1 {
+      position: absolute;
+      top: 300px;
+      left: 50px;
+      width: 100px;
+      height: 100px;
+      background: red;
+      z-index: 1;
+    }
+
+    .z-box2 {
+      position: absolute;
+      top: 320px;
+      left: 70px;
+      width: 100px;
+      height: 100px;
+      background: yellow;
+      z-index: 2;
+    }
+
+  </style>
 </head>
 <body>
-    <div class="kirmizi"></div>
-    <div class="mavi"></div>
-    <div class="sari"></div>
+
+  <div class="fixed-box">FIXED</div>
+
+  <div class="relative-box">RELATIVE</div>
+
+  <div class="parent">
+    <div class="absolute-box">ABS</div>
+  </div>
+
+  <div class="z-box1"></div>
+  <div class="z-box2"></div>
+
 </body>
 </html>
